@@ -1,0 +1,91 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Footer animations and particle effects */
+.glow-logo {
+  filter: drop-shadow(0 0 0.6rem rgba(100,100,255,0.6));
+  transition: transform 300ms ease, filter 300ms ease;
+}
+.glow-logo:hover {
+  transform: translateY(-4px) scale(1.03);
+  filter: drop-shadow(0 0 1.2rem rgba(100,100,255,0.9));
+}
+
+.footer-particles {
+  position: absolute;
+  inset: 0;
+}
+.footer-particles .particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg,#7b61ff,#ff7bc1);
+  opacity: 0.18;
+  transform: translate3d(0,0,0);
+  animation: float 8s ease-in-out infinite;
+}
+.footer-particles .particle.p-0{left:6%;top:20%;animation-duration:9s}
+.footer-particles .particle.p-1{left:18%;top:70%;animation-duration:7s}
+.footer-particles .particle.p-2{left:32%;top:40%;animation-duration:10s}
+.footer-particles .particle.p-3{left:46%;top:15%;animation-duration:6s}
+.footer-particles .particle.p-4{left:60%;top:60%;animation-duration:8s}
+.footer-particles .particle.p-5{left:74%;top:30%;animation-duration:11s}
+.footer-particles .particle.p-6{left:86%;top:50%;animation-duration:7.5s}
+.footer-particles .particle.p-7{left:12%;top:8%;animation-duration:9.5s}
+.footer-particles .particle.p-8{left:28%;top:82%;animation-duration:12s}
+.footer-particles .particle.p-9{left:52%;top:78%;animation-duration:6.5s}
+.footer-particles .particle.p-10{left:68%;top:6%;animation-duration:10.5s}
+.footer-particles .particle.p-11{left:90%;top:86%;animation-duration:9s}
+
+@keyframes float {
+  0%{transform: translateY(0) translateX(0) scale(1);opacity:0.18}
+  50%{transform: translateY(-18px) translateX(8px) scale(1.15);opacity:0.26}
+  100%{transform: translateY(0) translateX(0) scale(1);opacity:0.18}
+}
+
+/* Reduce motion respects user preferences */
+@media (prefers-reduced-motion: reduce) {
+  .footer-particles .particle { animation: none; }
+  .glow-logo { transition: none; }
+}

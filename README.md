@@ -134,6 +134,7 @@ An interactive and visually rich website built using **React**, **GSAP (GreenSoc
 ---
 
 ## 🖼️ Preview
+<img width="1268" height="566" alt="Screenshot 2025-12-31 at 4 32 15 AM" src="https://github.com/user-attachments/assets/bc0e74e0-a801-4c0d-8ad3-4c878043ce6e" />
 
 ## ✨ Features
 
